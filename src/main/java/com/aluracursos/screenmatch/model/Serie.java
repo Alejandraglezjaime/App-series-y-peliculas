@@ -4,6 +4,7 @@ import com.aluracursos.screenmatch.service.ConsultaChatGPT;
 import com.fasterxml.jackson.annotation.JsonAlias;
 import jakarta.persistence.*;
 
+import java.util.List;
 import java.util.OptionalDouble;
 @Entity
 @Table(name ="series")
@@ -21,6 +22,9 @@ public class Serie {
     private Categoria genero;
     private String actores;
     private String sinopsis;
+    @Transient
+    private List<Episodio> episodios;
+
 
     public Serie(DatosSerie datosSerie){
         this.titulo = datosSerie.titulo();
