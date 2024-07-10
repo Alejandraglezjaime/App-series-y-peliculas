@@ -22,11 +22,14 @@ public class Serie {
     private Categoria genero;
     private String actores;
     private String sinopsis;
-    @Transient
+
+    @OneToMany(mappedBy = "serie", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Episodio> episodios;
 
+    public Serie() {
+    }
 
-    public Serie(DatosSerie datosSerie){
+    public Serie(DatosSerie datosSerie) {
         this.titulo = datosSerie.titulo();
         this.totalTemporadas = datosSerie.totalTemporadas();
         this.evaluacion = OptionalDouble.of(Double.valueOf(datosSerie.evaluacion())).orElse(0);
@@ -38,6 +41,7 @@ public class Serie {
         this.sinopsis = ConsultaChatGPT.obtenerTraduccion(datosSerie.sinopsis()); */
 
     }
+
     public String getTitulo() {
         return titulo;
     }
@@ -98,18 +102,31 @@ public class Serie {
         Id = id;
     }
 
+    public List<Episodio> getEpisodios() {
+        return episodios;
+    }
+
+    public void setEpisodios(List<Episodio> episodios) {
+        episodios.forEach(e->e.setSerie(this));
+        this.episodios = episodios;
+    }
+
     public void setSinopsis(String sinopsis) {
         this.sinopsis = sinopsis;
     }
 
     @Override
     public String toString() {
-        return  "genero=" + genero +
+        return "genero=" + genero +
                 ", titulo='" + titulo + '\'' +
                 ", totalTemporadas=" + totalTemporadas +
                 ", evaluacion=" + evaluacion +
                 ", poster='" + poster + '\'' +
                 ", actores='" + actores + '\'' +
-                ", sinopsis='" + sinopsis + '\'' ;
+                ", sinopsis='" + sinopsis + '\'' +
+                ", episodios ='" + episodios + '\'';
     }
+
+
 }
+
