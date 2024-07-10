@@ -27,11 +27,12 @@ public class PrincipalModificaciones {
         var opcion = -1;
         while (opcion != 0) {
             var menu = """
-                    1 - Buscar series 
-                    2 - Buscar episodios
-                    3 - Mostrar series buscadas
-                    4 - Buscar series por título              
-                    0 - Salir
+                    1 - Buscar series .
+                    2 - Buscar episodios.
+                    3 - Mostrar series buscadas.
+                    4 - Buscar series por título.
+                    5 - Top 5 de las mejores series.              
+                    0 - Salir.
                     """;
             System.out.println(menu);
             opcion = teclado.nextInt();
@@ -49,6 +50,9 @@ public class PrincipalModificaciones {
                     break;
                 case 4:
                     buscarSeriesPorTitulo();
+                    break;
+                case 5:
+                    buscarTop5Series();
                     break;
                 case 0:
                     System.out.println("Cerrando la aplicación...");
@@ -131,9 +135,14 @@ public class PrincipalModificaciones {
         if (serieBuscada.isPresent()){
             System.out.println("La serie buscada es : "+serieBuscada.get());
         } else {
-            System.out.println("Serie no encontrada ");
+            System.out.println("Serie no encontrada en la base de datos");
         }
 
+    }
+
+    private void buscarTop5Series(){
+        List<Serie> topSeries = repositorio.findTop5ByOrderByEvaluacionDesc();
+        topSeries.forEach(s-> System.out.println("Serie : "+s.getTitulo()+ " evaluacion " +s.getEvaluacion()));
     }
 
 
