@@ -1,8 +1,9 @@
-# APLICACION QUE BUSCA INFORMACION DE SERIES.
+# APLICACION QUE BUSCA INFORMACION DE SERIES CON BACK-END Y FRONT-END
 
 ## Descripción del proyecto 
 
-Este repositorio fue creado para entender la programación backend, utilizando Spring Boot,API, API KEY, lenguaje java, y base de datos (SQL).
+Este repositorio fue creado para entender la programación backend, utilizando Spring Boot,API, API KEY, lenguaje java, y base de datos (SQL). Además de mostrar como configurar la programación backEnd a Front End para facilitar el uso al usuario. 
+
 La aplicación cuenta con un menú en el cual el usuario puede interactuar con la base de datos y a la API. 
 
     1.-  Buscar series.
@@ -39,6 +40,47 @@ Para el curso se utlizo la base de datos Postgres y su administrador PGAdmin.
 - [x] Top 5 episodios por serie 
 
 Para poder hacer uso del menú a partir del punto dos debes pasar por el punto 1, la serie automáticamente se guarda en la base de datos, se recomienda enseguido ocupar el punto 2 para guardar los episodios de la serie y no tener problemas al mandar a llamar los siguientes puntos. 
+
+# VISUALIZACION FRONT END
+
+### REQUISITOS DE LA APLICACION
+
+- [x] El usuario podra visualizar las series que se encuentran dentro de la base de datos, en tres diferentes secciones:
+
+      1.- Lanzamientos en ScreenMatch: observando su porter 
+    
+![Imagen principal app](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/principal1.jpg?raw=true)
+
+      2.- Títulos populares, ordenados de la mejor a menor evaluación
+
+![Imagen segunda app](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/principla2.jpg?raw=true)
+
+      3.- Títulos en la app. 
+      
+![Imagen tercera app](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/principal3.jpg?raw=true)
+
+
+- [x] Habilitar una lista desplegable para el usuario, donde pueda observar las películas de determinada categoría, un ejemplo, que muestre películas de comedia, drama, romance... 
+
+![Imagen seccion de series de accion](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/classAccion.jpg?raw=true)
+
+![Imagen seccion de series de drama](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/classDrama.jpg?raw=true)
+
+- [x] Poder seleccionar una serie al darle click en su poster y este nos redireccione a su información general. (Poster, título, evaluación, sinópsis, actores, sección para observar temporadas) 
+
+![Imagen informacion birderton](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/informacionSeleccion.jpg?raw=true)
+
+![Imagen informacon teen wolf](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/informacionSeleccion2.jpg?raw=true)
+
+- [x] En la sección donde nos muestra la información general nos muestre una lista desplegable para observar los títulos de los episodios, ya sea por temporada específica o los episodios de todas las temporadas.
+
+![Imagen lista desplegable ](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/buscadorInformacion.jpg?raw=true)
+
+![Imagen ejemplo de la lista de episodios](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/temporada1Bridgerton.jpg?raw=true)
+
+![Imagen ejemplo de la lista de episodios 2](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/temporada1Bridgerton.jpg?raw=true)
+
+![Imagen información de todas las temporadas disponibles](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/seleccionInformacionTodasTemporadas.jpg?raw=true)
 
 
 
