@@ -1,4 +1,4 @@
-# SCREENMATCH (APLICACION DE INFORMACIóN DE SERIES)
+# SCREENMATCH (APLICACION DE INFORMACION DE SERIES)
 
 Esta aplicación es una versión similar a las aplicaciónes de entretenimiento como lo es Netflix o Prime Video, en ella puedes ver diferentes secciones que muestras los títulos de las series dependiendo de su clasificación.
 
