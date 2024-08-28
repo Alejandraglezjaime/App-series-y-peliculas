@@ -1,10 +1,12 @@
-# APLICACION QUE BUSCA INFORMACION DE SERIES CON BACK-END Y FRONT-END
+# SCREENMATCH (APLICACION DE INFORMACIóN DE SERIES)
+
+Esta aplicación es una versión similar a las aplicaciónes de entretenimiento como lo es Netflix o Prime Video, en ella puedes ver diferentes secciones que muestras los títulos de las series dependiendo de su clasificación.
 
 ## Descripción del proyecto 
 
 Este repositorio fue creado para entender la programación backend, utilizando Spring Boot,API, API KEY, lenguaje java, y base de datos (SQL). Además de mostrar como configurar la programación backEnd a Front End para facilitar el uso al usuario. 
 
-La aplicación cuenta con un menú en el cual el usuario puede interactuar con la base de datos y a la API. 
+La aplicación cuenta con un menú en el cual el usuario puede interactuar con la base de datos y a la API. Es aquí donde el usuario ingresa los datos de las series a la base de datos.
 
     1.-  Buscar series.
     2.-  Buscar episodios.
@@ -82,7 +84,21 @@ Para poder hacer uso del menú a partir del punto dos debes pasar por el punto 1
 
 ![Imagen información de todas las temporadas disponibles](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/seleccionInformacionTodasTemporadas.jpg?raw=true)
 
+## REQUISITOS FALTANTES 
 
+- [ ] Se busca que en la aplicación nos permmita desde la barra de busqueda buscar nuevos títulos e ingresarlos, en caso que no exista, mostrar una ventana que indique que el título no se encuentre disponible, y permita en un botón regresar a la ventana principal.
+
+- [ ] Al seleccionar un título, nos manda a la ventana de información del mismo, debe aparecer un botón que nos permita regresar a la ventana principal.
+
+#### DEPENDENCIAS. 
+
+![Dependencias utilizadas](https://github.com/Alejandraglezjaime/App-series-y-peliculas/blob/master/imagenes/ImagReadme/dependencias.jpg?raw=true)
+
+#### IMPORTANTE
+
+Para poder observar el programa corriendo correctamente, debes compilar el programa en el IDE IntelliJ IDEA y para visualizarlo debes ejecutarlo desde un live server (se recomienda Visual Stude Code).
+
+Acuerdate obtener tu llave API-KEY para que pueda obtener los datos de en la API OMDb que es un servicio web RESTful para obtener información de películas, todo el contenido y las imágenes del sitio son aportadas y mantenidas por los usuarios. 
 
 # AUTOR
-#### © Alejandra Gonzalez  
+#### © Alejandra Gonzalez     
